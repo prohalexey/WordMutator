@@ -1,2 +1,12 @@
 # WordMutator
-Transform dictionary word to another dictionary word by replacing n-letters on each step
+Transform dictionary word to another dictionary word by replacing n-letters on each step.
+
+Преобразует одно словарное слово в другое словарное слово, заменой n-букв с получением промежуточных словарных слов.
+
+Запуск программы:
+- Установить зависимости `composer install`
+- Отредактировать переменные `$startWord` и `$endWord` в файле `mutator.php`
+- Запустить скрипт `php mutator.php`
+
+При первом запуске программы для заданной длины слова, программа может очень долго думать, это происходит из-за построения графа из словаря.
+При последующих запусках, граф будет загружаться из кеша, который находится в директории ``./graph/``
